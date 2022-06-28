@@ -1,0 +1,147 @@
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 14px;
+	background-color: #333;
+	color: #fff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-screen{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.full-screen__body{
+    padding: 50px 15px;
+    color: white;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+
+}
+.full-screen__title{
+    font-size: 50px;
+    letter-spacing: 25px;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+}
+.full-screen__text{
+    font-size: 18px;
+    letter-spacing: 15px;
+}
+.full-screen__text a {
+    color: red;
+    font-size: 26px;
+    text-decoration: none;
+
+}
+.full-screen__video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.content{
+    position: relative;
+    z-index: 5;
+    
+}
+
+
+.content__container1{
+    background-color: rgba(48, 48, 138, 0.637);
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.content__container1 p{
+    margin: 0px 0px 20px 0px;
+}
+
+
+.content__container2{
+    background-color: rgba(48, 138, 82, 0.637);
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.content__container2 p{
+    margin: 0px 0px 20px 0px;
+}
+
+.content__container3{
+    background-color: rgba(160, 2, 42, 0.637);
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.content__container3 p{
+    margin: 0px 0px 20px 0px;
+}
+
+.items{
+    padding: 50px 0;
+
+}
+.items__container{
+    max-width: 1200px;
+    padding: 0px 15px;
+	margin: 0px auto;
+    background-color: yellowgreen;
+}
+
+.items__body{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.item{
+}
+.item__video{
+    object-fit: cover;
+    position: relative;
+    margin: 0px 0px 15px 0px;
+    /*aspect-ratio: 16 / 9;*/
+    padding: 0px 0px 56% 0px;
+}
+.item__video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.item__text{
+    
+    color: red;
+    font-size: 18px;
+    line-height: 150%;
+}
